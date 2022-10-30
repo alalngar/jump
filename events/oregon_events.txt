@@ -135,7 +135,18 @@ oregon.2 = {
 							}
 						}
 					}
-					set_state_owner = c:HBC
+					if = {
+						limit = {
+							exists = c:CAN
+						}
+						set_state_owner = c:CAN
+					}
+					if = {
+						limit = {
+							exists = c:HBC
+						}
+						set_state_owner = c:HBC
+					}	
 				}
 			}
 			s:STATE_SASKATCHEWAN = {
@@ -149,7 +160,18 @@ oregon.2 = {
 							}
 						}
 					}
-					set_state_owner = c:HBC
+					if = {
+						limit = {
+							exists = c:CAN
+						}
+						set_state_owner = c:CAN
+					}
+					if = {
+						limit = {
+							exists = c:HBC
+						}
+						set_state_owner = c:HBC
+					}	
 				}
 			}
 			s:STATE_MANITOBA = {
@@ -163,7 +185,18 @@ oregon.2 = {
 							}
 						}
 					}
-					set_state_owner = c:HBC
+					if = {
+						limit = {
+							exists = c:CAN
+						}
+						set_state_owner = c:CAN
+					}	
+					if = {
+						limit = {
+							exists = c:HBC
+						}
+						set_state_owner = c:HBC
+					}	
 				}
 			}
 			s:STATE_BRITISH_COLUMBIA = {
@@ -177,7 +210,18 @@ oregon.2 = {
 							}
 						}
 					}
-					set_state_owner = c:ORG
+					if = {
+						limit = {
+							exists = c:CAN
+						}
+						set_state_owner = c:CAN
+					}	
+					if = {
+						limit = {
+							exists = c:ORG
+						}
+						set_state_owner = c:ORG
+					}	
 				}
 			}
 		}
@@ -333,7 +377,18 @@ oregon.3 = {
 						}
 					}
 				}
-				set_state_owner = c:HBC
+				if = {
+					limit = {
+						exists = c:CAN
+					}
+					set_state_owner = c:CAN
+				}
+				if = {
+					limit = {
+						exists = c:HBC
+					}
+					set_state_owner = c:HBC
+				}	
 			}
 		}
 		s:STATE_SASKATCHEWAN = {
@@ -347,7 +402,18 @@ oregon.3 = {
 						}
 					}
 				}
-				set_state_owner = c:HBC
+				if = {
+					limit = {
+						exists = c:CAN
+					}
+					set_state_owner = c:CAN
+				}
+				if = {
+					limit = {
+						exists = c:HBC
+					}
+					set_state_owner = c:HBC
+				}	
 			}
 		}
 		s:STATE_MANITOBA = {
@@ -361,7 +427,18 @@ oregon.3 = {
 						}
 					}
 				}
-				set_state_owner = c:HBC
+				if = {
+					limit = {
+						exists = c:CAN
+					}
+					set_state_owner = c:CAN
+				}	
+				if = {
+					limit = {
+						exists = c:HBC
+					}
+					set_state_owner = c:HBC
+				}	
 			}
 		}
 		s:STATE_BRITISH_COLUMBIA = {
@@ -375,7 +452,18 @@ oregon.3 = {
 						}
 					}
 				}
-				set_state_owner = c:ORG
+				if = {
+					limit = {
+						exists = c:CAN
+					}
+					set_state_owner = c:CAN
+				}	
+				if = {
+					limit = {
+						exists = c:ORG
+					}
+					set_state_owner = c:ORG
+				}	
 			}
 		}
 	}
