@@ -1,6 +1,6 @@
 colors = {	
-	austria_hungary_color = 		hsv360 	{	30	70	55	}		
-	khmer_green = rgb {	0.2 0.37 0.27 }
+	austria_hungary_color = rgb{ 0.16 0.14 0.14 }		
+	khmer_green = rgb { 0.2 0.37 0.27 }
 	mexican_empire_green = rgb { 0.18 0.33 0.22 }
 	united_netherlands_orange = rgb { 0.9 0.47 0 }
 	naples_purple = rgb { 0.52 0 0.49 }
