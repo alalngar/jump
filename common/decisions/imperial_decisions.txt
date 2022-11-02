@@ -1,0 +1,28 @@
+imperial_federation_decision = {
+	is_shown = {
+		tag = c:GBR
+        NOT = { exist = c:IMP }
+        NOT = { has_variable = imperial_federation_begun }
+        country_rank >= rank_value:major_power
+        is_subject = no
+	}
+
+	possible = {
+		has_technology_researched = pan-nationalism
+		is_at_war = no
+	}
+	
+	when_taken = {
+		set_variable = {
+			name = imperial_federation_begun
+			value = 0
+		}
+		add_journal_entry = {
+			type = je_imperial_federation_unification
+		}
+	}
+
+	ai_chance = {
+		base = 0
+	}
+}

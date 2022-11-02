@@ -1,20 +1,6 @@
 je_imperial_federation_unification = {
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 
-	is_shown_when_inactive = {
-		tag = GBR
-		OR = {
-			country_tier = empire
-			country_tier = kingdom
-		}
-	}
-
-	possible = {
-		country_rank >= rank_value:major_power
-		has_technology_researched = pan-nationalism
-		is_subject = no
-	}
-
 	complete = {
         OR = {
             AND = {
@@ -102,5 +88,7 @@ je_imperial_federation_unification = {
 		}
 	}
 
-	weight = 100
+	weight = 1
+
+    should_be_pinned_by_default = yes
 }

@@ -58,6 +58,7 @@ imperial_unification.2 = {
 	trigger = {
 		root.infamy < infamy_threshold:infamous
         is_at_war = no 
+		country_tier = empire
 		any_country = {
             NOT = {
                 tag = c:GBR
@@ -72,21 +73,22 @@ imperial_unification.2 = {
                 }
             }
 			OR = {
-                has_diplomatic_pact = {
-                    who = ROOT
-                    type = dominion
-                }
-                has_diplomatic_pact = {
-                    who = ROOT
-                    type = puppet
-                }
-            }
+				has_diplomatic_pact = {
+					who = ROOT
+					type = dominion
+				}
+				has_diplomatic_pact = {
+					who = ROOT
+					type = puppet
+				}
+			}
             OR = {
 				is_subject = no
 				is_subject_of = ROOT
 			}
             exists = ROOT
 			is_player = no
+			NOT = { has_variable = imperial_minor_dont_annex }
 			relations:root >= relations_threshold:amicable
 		}
 	}
@@ -107,16 +109,22 @@ imperial_unification.2 = {
                     }
                 }
 				OR = {
-                    has_diplomatic_pact = {
-                        who = ROOT
-                        type = dominion
-                    }
-                    has_diplomatic_pact = {
-                        who = ROOT
-                        type = puppet
-                    }
-                }
+					has_diplomatic_pact = {
+						who = ROOT
+						type = dominion
+					}
+					has_diplomatic_pact = {
+						who = ROOT
+						type = puppet
+					}
+				}
+				OR = {
+					is_subject = no
+					is_subject_of = ROOT
+				}
                 country_rank < rank_value:major_power
+				exist = ROOT
+				is_player = no
                 relations:root >= relations_threshold:amicable
                 NOT = { has_variable = imperial_minor_dont_annex }
 			}

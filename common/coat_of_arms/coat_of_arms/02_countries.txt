@@ -22799,14 +22799,6 @@ KLM = { # Kalmykia
 	color2 = "white"
 }
 
-# Imperial Federation
-IMP = {
-	
-	pattern = "pattern_solid.tga"
-	color1 = "white"
-	color2 = "white"
-}
-
 # Indochina
 IDO = {
 	

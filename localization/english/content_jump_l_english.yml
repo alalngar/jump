@@ -11,21 +11,27 @@ IMP_ADJ:0 "Imperial"
 
 #Jorunal Entries
 je_imperial_federation_unification:0 "Imperial Federation"
-je_imperial_status:0 "All Great Britain Puppets will want to unify when you have high mutual relations"
+je_imperial_federation_unification_reason:0 "Reason Text"
+je_imperial_status:0 "All Great Britain puppets will want to unify when you have high mutual relations"
 
+#Decisions
+imperial_federation_decision:0 "Imperial Federation"
+imperial_federation_decision_desc:0 "Imperial Federation Description"
+
+#Events
 imperial_unification.1.t:0 "Imperial Federation Formed"
-imperial_unification.1.d:0 ""
-imperial_unification.1.f:0 ""
+imperial_unification.1.d:0 "Description 1"
+imperial_unification.1.f:0 "Flavor 1"
 imperial_unification.1.a:0 "Godbless the Imperial Federation"
 
 imperial_unification.2.t:0 "Send onvoy to [SCOPE.sCountry('imperial_annex_country').GetName]"
-imperial_unification.2.d:0 "To form the Imperial federation we must first send a new Constitution in which all of the Federation must sign to finalize the Union"
-imperial_unification.2.f:0 ""
+imperial_unification.2.d:0 "To form the Imperial Federation we must first send a new constitution in which all of the federation must sign to finalize the Union"
+imperial_unification.2.f:0 "Flavor 2"
 imperial_unification.2.a:0 "Send the Declaration of the Imperial Federation!"
 imperial_unification.2.b:0 "They are no use to us..."
 
 imperial_unification.3.t:0 "Imperial Annexation"
 imperial_unification.3.d:0 "Great Britain wishes to form the Imperial Federation"
-imperial_unification.3.f:0 ""
+imperial_unification.3.f:0 "Flavor 3"
 imperial_unification.3.a:0 "Sign over the country..."
 imperial_unification.3.b:0 "'Burn this letter at once'"
