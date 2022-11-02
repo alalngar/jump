@@ -3787,3 +3787,64 @@ SCH = {
 	capital = STATE_SCHLESWIG_HOLSTEIN
 	is_named_from_capital = yes
 }
+
+# Imperial Federation
+IMP = {
+	color = { 156 34 43 }
+
+	country_type = recognized
+
+	tier = empire	
+	
+	cultures = { british scottish irish anglo_canadian franco_canadian australian }
+	capital = STATE_HOME_COUNTIES
+}
+
+# Indochina
+IDO = {
+	color = { 17 48 133 }
+
+	country_type = recognized
+
+	tier = empire	
+	
+	cultures = { vietnamese lao thai khmer shan burmese kachin karen }
+	capital = STATE_TONKIN
+}
+
+# Latin American
+LTA = {
+	color = hsv{ 0.99  0.7  0.9 }
+
+	country_type = recognized
+
+	tier = empire	
+	
+	cultures = { mexican central_american north_andean }
+	capital = STATE_MEXICO
+	is_named_from_capital = yes
+}
+
+# South American Federation
+SFA = {
+	color = { 119 181 88 }
+
+	country_type = recognized
+
+	tier = empire	
+	
+	cultures = { brazilian north_andean south_andean platinean }
+	capital = STATE_RIO_DE_JANEIRO
+}
+
+# Benelux (Netherlands and Belgium Foramation)
+BNX = {
+	color = { 212 124 64 }
+
+	country_type = recognized
+
+	tier = empire	
+	
+	cultures = { dutch flemish wallonian }
+	capital = STATE_HOLLAND
+}

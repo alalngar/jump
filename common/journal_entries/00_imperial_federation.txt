@@ -1,0 +1,106 @@
+je_imperial_federation_unification = {
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	is_shown_when_inactive = {
+		tag = GBR
+		OR = {
+			country_tier = empire
+			country_tier = kingdom
+		}
+	}
+
+	possible = {
+		country_rank >= rank_value:major_power
+		has_technology_researched = pan-nationalism
+		is_subject = no
+	}
+
+	complete = {
+        OR = {
+            AND = {
+                owns_entire_state_region = STATE_MANITOBA
+		        owns_entire_state_region = STATE_ONTARIO
+		        owns_entire_state_region = STATE_QUEBEC
+		        owns_entire_state_region = STATE_NEW_BRUNSWICK
+		        owns_entire_state_region = STATE_BRITISH_COLUMBIA
+            }
+            trigger_if = {
+                limit = {
+                    exists = c:HBC
+                    tag = c:HBC
+                }
+                c:HBC = {
+                    is_player = yes
+                }
+            }
+            trigger_else_if = {
+                limit = {
+                    exists = c:CAN
+                    tag = c:CAN
+                }
+                c:CAN = {
+                    is_player = yes
+                }
+            }
+        }
+        OR = {
+            AND = {
+                owns_entire_state_region = STATE_NEW_SOUTH_WALES
+		        owns_entire_state_region = STATE_SOUTH_AUSTRALIA
+		        owns_entire_state_region = STATE_WESTERN_AUSTRALIA
+		        owns_entire_state_region = STATE_TASMANIA
+            }
+            trigger_if = {
+                limit = {
+                    exists = c:NSW
+                    tag = c:NSW
+                }
+                c:NSW = {
+                    is_player = yes
+                }
+            }
+            trigger_else_if = {
+                limit = {
+                    exists = c:AST
+                    tag = c:AST
+                }
+                c:AST = {
+                    is_player = yes
+                }
+            }
+        }
+        OR = {
+            owns_entire_state_region = STATE_CAPE_COLONY
+            trigger_if = {
+                limit = {
+                    exists = c:SAF
+                    tag = c:SAF
+                }
+                c:SAF = {
+                    is_player = yes
+                }
+            }
+        }		
+		owns_entire_state_region = STATE_SIERRA_LEONE
+	}
+
+	on_monthly_pulse = {
+		events = {
+			imperial_unification.2 # confederation
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = imperial_unification.1 }
+	}
+
+	status_desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = je_imperial_status
+			}
+		}
+	}
+
+	weight = 100
+}
