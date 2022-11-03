@@ -1,10 +1,14 @@
 {
   "name" : "JUMP",
   "id" : "",
-  "version" : "",
-  "supported_game_version" : "",
-  "short_description" : "",
-  "tags" : [],
+  "version" : "1.0.1",
+  "supported_game_version" : "1.0.4",
+  "short_description" : "Multiplayer Focused Mod",
+  "tags" : [
+    "Multiplayer",
+    "Custom Nations",
+    "Flavor"
+  ],
   "relationships" : [],
   "game_custom_data" : {
     "multiplayer_synchronized" : true

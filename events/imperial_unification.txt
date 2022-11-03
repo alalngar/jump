@@ -60,18 +60,61 @@ imperial_unification.2 = {
         is_at_war = no 
 		country_tier = empire
 		any_country = {
-            NOT = {
-                tag = c:GBR
-                tag = c:BIC
-            }
-            ROOT = {
-                OR = {
-                    country_has_primary_culture = cu:british
-                    country_has_primary_culture = cu:anglo_canadian
-                    country_has_primary_culture = cu:franco_canadian
-                    country_has_primary_culture = cu:australian
-                }
-            }
+			OR = {
+				country_has_primary_culture = cu:british
+				trigger_if = {
+					limt = {
+						NOT = {
+							OR = {
+								trigger_if = {
+									limit = {
+										exists = c:HBC
+									}
+									c:HBC = {
+										is_player = yes
+									}
+								}
+								trigger_if = {
+									limit = {
+										exists = c:CAN
+									}
+									c:CAN = {
+										is_player = yes
+									}
+								}
+							}
+						}
+					}
+					country_has_primary_culture = cu:anglo_canadian
+					country_has_primary_culture = cu:franco_canadian
+				}
+				trigger_if = {
+					limt = {
+						NOT = {
+							OR = {
+								trigger_if = {
+									limit = {
+										exists = c:NSW
+									}
+									c:NSW = {
+										is_player = yes
+									}
+								}
+								trigger_if = {
+									limit = {
+										exists = c:AST
+									}
+									c:AST = {
+										is_player = yes
+									}
+								}
+							}
+						}
+					}
+					country_has_primary_culture = cu:australian
+				}
+				owns_entire_state_region = STATE_SIERRA_LEONE
+			}
 			OR = {
 				has_diplomatic_pact = {
 					who = ROOT
@@ -86,7 +129,6 @@ imperial_unification.2 = {
 				is_subject = no
 				is_subject_of = ROOT
 			}
-            exists = ROOT
 			is_player = no
 			NOT = { has_variable = imperial_minor_dont_annex }
 			relations:root >= relations_threshold:amicable
@@ -96,18 +138,67 @@ imperial_unification.2 = {
 	immediate = {
 		random_country = {
 			limit = {
-                NOT = {
-                    tag = c:GBR
-                    tag = c:BIC
-                }
-                ROOT = {
-                    OR = {
-                        country_has_primary_culture = cu:british
-                        country_has_primary_culture = cu:anglo_canadian
-                        country_has_primary_culture = cu:franco_canadian
-                        country_has_primary_culture = cu:australian
-                    }
-                }
+				NOT = {
+					tag = c:GBR
+					tag = c:BIC
+				}
+				OR = {
+					OR = {
+						country_has_primary_culture = cu:british
+						trigger_if = {
+							limt = {
+								NOT = {
+									OR = {
+										trigger_if = {
+											limit = {
+												exists = c:HBC
+											}
+											c:HBC = {
+												is_player = yes
+											}
+										}
+										trigger_if = {
+											limit = {
+												exists = c:CAN
+											}
+											c:CAN = {
+												is_player = yes
+											}
+										}
+									}
+								}
+							}
+							country_has_primary_culture = cu:anglo_canadian
+							country_has_primary_culture = cu:franco_canadian
+						}
+						trigger_if = {
+							limt = {
+								NOT = {
+									OR = {
+										trigger_if = {
+											limit = {
+												exists = c:NSW
+											}
+											c:NSW = {
+												is_player = yes
+											}
+										}
+										trigger_if = {
+											limit = {
+												exists = c:AST
+											}
+											c:AST = {
+												is_player = yes
+											}
+										}
+									}
+								}
+							}
+							country_has_primary_culture = cu:australian
+						}
+						owns_entire_state_region = STATE_SIERRA_LEONE
+					}
+				}
 				OR = {
 					has_diplomatic_pact = {
 						who = ROOT
@@ -122,11 +213,9 @@ imperial_unification.2 = {
 					is_subject = no
 					is_subject_of = ROOT
 				}
-                country_rank < rank_value:major_power
-				exist = ROOT
 				is_player = no
-                relations:root >= relations_threshold:amicable
-                NOT = { has_variable = imperial_minor_dont_annex }
+				NOT = { has_variable = imperial_minor_dont_annex }
+				relations:root >= relations_threshold:amicable
 			}
 			save_scope_as = imperial_annex_country
 		}

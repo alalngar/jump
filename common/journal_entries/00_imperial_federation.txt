@@ -13,7 +13,6 @@ je_imperial_federation_unification = {
             trigger_if = {
                 limit = {
                     exists = c:HBC
-                    tag = c:HBC
                 }
                 c:HBC = {
                     is_player = yes
@@ -22,7 +21,6 @@ je_imperial_federation_unification = {
             trigger_else_if = {
                 limit = {
                     exists = c:CAN
-                    tag = c:CAN
                 }
                 c:CAN = {
                     is_player = yes
@@ -39,7 +37,6 @@ je_imperial_federation_unification = {
             trigger_if = {
                 limit = {
                     exists = c:NSW
-                    tag = c:NSW
                 }
                 c:NSW = {
                     is_player = yes
@@ -48,7 +45,6 @@ je_imperial_federation_unification = {
             trigger_else_if = {
                 limit = {
                     exists = c:AST
-                    tag = c:AST
                 }
                 c:AST = {
                     is_player = yes
@@ -60,13 +56,12 @@ je_imperial_federation_unification = {
             trigger_if = {
                 limit = {
                     exists = c:SAF
-                    tag = c:SAF
                 }
                 c:SAF = {
                     is_player = yes
                 }
             }
-        }		
+        }
 		owns_entire_state_region = STATE_SIERRA_LEONE
 	}
 

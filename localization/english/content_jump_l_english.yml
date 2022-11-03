@@ -35,3 +35,6 @@ imperial_unification.3.d:0 "Great Britain wishes to form the Imperial Federation
 imperial_unification.3.f:0 "Flavor 3"
 imperial_unification.3.a:0 "Sign over the country..."
 imperial_unification.3.b:0 "'Burn this letter at once'"
+
+#Modifiers
+ngf_formed:0 "North Germany Formed"
