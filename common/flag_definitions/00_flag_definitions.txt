@@ -8833,11 +8833,11 @@ SFA = {
 }
 
 # Latin American
-LTA = {
-	flag_definition = {
-		coa = GBR
-		subject_canton = GBR
-		priority = 1
-		allow_overlord_canton = yes
-	}
-}
+# LTA = {
+# 	flag_definition = {
+# 		coa = GBR
+# 		subject_canton = GBR
+# 		priority = 1
+# 		allow_overlord_canton = yes
+# 	}
+# }

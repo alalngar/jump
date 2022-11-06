@@ -3813,17 +3813,17 @@ IDO = {
 }
 
 # Latin American
-LTA = {
-	color = hsv{ 0.99  0.7  0.9 }
+# LTA = {
+# 	color = hsv{ 0.99  0.7  0.9 }
 
-	country_type = recognized
+# 	country_type = recognized
 
-	tier = empire	
+# 	tier = empire	
 	
-	cultures = { mexican central_american north_andean }
-	capital = STATE_MEXICO
-	is_named_from_capital = yes
-}
+# 	cultures = { mexican central_american north_andean }
+# 	capital = STATE_MEXICO
+# 	is_named_from_capital = yes
+# }
 
 # South American Federation
 SFA = {

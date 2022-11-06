@@ -22808,12 +22808,12 @@ IDO = {
 }
 
 # Latin American
-LTA = {
+# LTA = {
 	
-	pattern = "pattern_solid.tga"
-	color1 = "white"
-	color2 = "white"
-}
+# 	pattern = "pattern_solid.tga"
+# 	color1 = "white"
+# 	color2 = "white"
+# }
 
 # South American Federation
 SFA = {
