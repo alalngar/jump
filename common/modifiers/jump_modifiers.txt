@@ -1,3 +1,13 @@
-ngf_formed = {
+modifier_ngf_formed = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+}
+modifier_slave_state = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+	building_group_bg_agriculture_throughput_mult = 0.15
+	building_group_bg_plantations_throughput_mult = 0.15
+	building_group_bg_ranching_throughput_mult = 0.15
+	building_coal_mine_throughput_mult = 0.01
+	building_iron_mine_throughput_mult = 0.01
+	building_lead_mine_throughput_mult = 0.01
+	building_sulfur_mine_throughput_mult = 0.01
 }

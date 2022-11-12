@@ -155,7 +155,7 @@ german_unification.2 = {
 			trigger_else_if = {
 				limit = {
 					ROOT = {
-						has_modifier = ngf_formed
+						has_modifier = modifier_ngf_formed
 					}
 				}
 				OR = {
@@ -220,7 +220,7 @@ german_unification.2 = {
 				trigger_else_if = {
 					limit = {
 						ROOT = {
-							has_modifier = ngf_formed
+							has_modifier = modifier_ngf_formed
 						}
 					}
 					OR = {

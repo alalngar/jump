@@ -37,4 +37,5 @@ imperial_unification.3.a:0 "Sign over the country..."
 imperial_unification.3.b:0 "'Burn this letter at once'"
 
 #Modifiers
-ngf_formed:0 "North Germany Formed"
+modifier_ngf_formed:0 "North Germany Formed"
+modifier_slave_state:0 "Slave State"

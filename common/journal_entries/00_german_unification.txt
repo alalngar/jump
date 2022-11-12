@@ -12,7 +12,7 @@
 	possible = {
 		country_rank >= rank_value:major_power
 		has_technology_researched = nationalism
-		NOT = { has_variable = NGF_formed }
+		has_modifier = modifier_ngf_formed
 		is_subject = no
 	}
 
@@ -47,7 +47,7 @@
 
 	on_complete = {
 		add_modifier = {
-			name = ngf_formed
+			name = modifier_ngf_formed
 			days = -1
 		}
 		trigger_event = { id = german_unification.1 } # North German Confederation
@@ -80,7 +80,7 @@ je_german_unification = {
 		country_rank >= rank_value:major_power
 		OR = {
 			has_technology_researched = pan-nationalism
-			has_modifier = ngf_formed
+			has_modifier = modifier_ngf_formed
 		}
 		is_subject = no
 	}
@@ -118,9 +118,9 @@ je_german_unification = {
 	on_complete = {
 		if = {
 			limit = {
-				has_modifier = ngf_formed
+				has_modifier = modifier_ngf_formed
 			}
-			remove_modifier = ngf_formed
+			remove_modifier = modifier_ngf_formed
 		}		
 		trigger_event = { id = german_unification.4 } # German Unification
 	}
